@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pulbackend-dev-72b1d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::147997155443:role/amplify-pulbackend-dev-72b1d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::147997155443:role/amplify-pulbackend-dev-72b1d-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-pulbackend-dev-72b1d-deployment",
+      "UnauthRoleName": "amplify-pulbackend-dev-72b1d-unauthRole",
+      "StackName": "amplify-pulbackend-dev-72b1d",
+      "StackId": "arn:aws:cloudformation:us-east-1:147997155443:stack/amplify-pulbackend-dev-72b1d/19dc16f0-8bf4-11ef-84c3-123e4817eb09",
+      "AmplifyAppId": "d39nujl8dx6r4z"
+    },
+    "categories": {
+      "api": {
+        "pulbackend": {}
+      },
+      "auth": {
+        "pulbackend73a20663": {}
+      }
+    }
+  }
+}
