@@ -69,3 +69,67 @@ export const listProcedimientos = /* GraphQL */ `
     }
   }
 `;
+
+// Mutación para eliminar un Todo
+export const deleteTodo = /* GraphQL */ `
+  mutation DeleteTodo($input: DeleteTodoInput!) {
+    deleteTodo(input: $input) {
+      id
+      name
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+
+// Mutación para eliminar un Procedimiento
+export const deleteProcedimiento = /* GraphQL */ `
+  mutation DeleteProcedimiento($input: DeleteProcedimientoInput!) {
+    deleteProcedimiento(input: $input) {
+      id
+      nombre
+      codigo
+      reclamadoRDS
+      diferenciaRDS
+      autorizadoRDS
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+
+// Mutación para crear un Todo
+export const createTodo = /* GraphQL */ `
+  mutation CreateTodo(
+    $input: CreateTodoInput!
+    $condition: ModelTodoConditionInput
+  ) {
+    createTodo(input: $input, condition: $condition) {
+      id
+      name
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+
+// Mutación para crear un Procedimiento
+export const createProcedimiento = /* GraphQL */ `
+  mutation CreateProcedimiento(
+    $input: CreateProcedimientoInput!
+    $condition: ModelProcedimientoConditionInput
+  ) {
+    createProcedimiento(input: $input, condition: $condition) {
+  
+      nombre
+      codigo
+      reclamadoRDS
+      diferenciaRDS
+      autorizadoRDS
+      __typename
+    }
+  }
+`;

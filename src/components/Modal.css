@@ -1,0 +1,84 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+ width: 85%;
+  text-align: center;
+ height: 456px;}
+
+.modal-header  {
+
+  margin: 20px 57px;
+  display: flex;
+}
+
+.modal-body {
+  height: 300px;
+  margin: 20px 57px;
+}
+
+.modal-footer{
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+}
+.Cancel{
+  width: 138px;
+  height: 32px;
+  border-radius: 5px;
+  border: 2px solid #D6D6EB;
+  opacity: 0px;
+  text-align: center;
+background-color: transparent;  
+
+font-size: 14px;
+font-weight: 700;
+line-height: 16.44px;
+color: #6E6D8C;
+text-align: center;
+
+}
+
+.modalTitle{
+
+font-family: Raleway;
+font-size: 32px;
+font-weight: 400;
+line-height: 44.8px;
+text-align: left;
+margin-left: 5%;
+color: #1E2469;
+
+
+}
+.modalSubtitle{
+  gap: 5px;
+  font-family: Raleway;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 44.8px;
+  text-align: left;
+  color: #07B284;
+  margin: 32px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+  margin-left: 21px;
+
+
+}
