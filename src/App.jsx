@@ -65,11 +65,11 @@ export default function App() {
 
   const handleAddProcedure =  () => {
      setEditingProcedure([
-      ...editingProcedure,  // Mantén los procedimientos existentes
+      ...editingProcedure, 
       {
         __typename
         : 
-        "Procedimiento"}  // Añade el nuevo procedimiento
+        "Procedimiento"} 
     ])
   }
 
@@ -95,12 +95,12 @@ export default function App() {
           query: createProcedimiento,
           variables: {
             input: {
-              nombre: proc.nombre,        // Campo válido
-              codigo: proc.codigo,        // Campo válido
-              reclamadoRDS: proc.reclamadoRDS,    // Campo válido
-              diferenciaRDS: proc.diferenciaRDS,  // Campo válido
-              autorizadoRDS: proc.autorizadoRDS   // Campo válido
-              // createdAt y updatedAt no se deben pasar si no están definidos en el esquema
+              nombre: proc.nombre,        
+              codigo: proc.codigo,
+              reclamadoRDS: proc.reclamadoRDS, 
+              diferenciaRDS: proc.diferenciaRDS, 
+              autorizadoRDS: proc.autorizadoRDS  
+            
             }
           }
         });
@@ -142,7 +142,7 @@ export default function App() {
         <Alert
           message="Prcedamientos Actualizados" 
           onClose={() =>console.log("test")} 
-          duration={3000} // Duración de la alerta en milisegundos
+          duration={3000} 
         />
       )}
       <h2 className="title">Procedimientos</h2>

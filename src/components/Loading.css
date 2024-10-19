@@ -1,4 +1,4 @@
-/* Estilos para hacer el loading de pantalla completa */
+
 .loading-screen {
     position: fixed;
     top: 0;
@@ -8,15 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    z-index: 9999; /* Asegúrate de que esté por encima de todo */
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 9999;
     flex-direction: column;
     color: #fff;
   }
   
   .spinner {
-    border: 8px solid rgba(255, 255, 255, 0.3); /* Borde gris claro */
-    border-top: 8px solid #ffffff; /* Borde blanco */
+    border: 8px solid rgba(255, 255, 255, 0.3); 
+    border-top: 8px solid #ffffff; 
     border-radius: 50%;
     width: 80px;
     height: 80px;

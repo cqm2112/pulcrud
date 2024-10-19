@@ -1,4 +1,4 @@
-import './Modal.css'; // Asegúrate de tener un archivo CSS para estilos básicos
+import './Modal.css'; 
 import plus from '../assets/plus.png'
 import check from '../assets/check.png'
 

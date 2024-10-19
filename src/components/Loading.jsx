@@ -1,4 +1,4 @@
-import './Loading.css'; // Archivo CSS para los estilos
+import './Loading.css'; 
 
  export const LoadingScreen = () => {
   return (

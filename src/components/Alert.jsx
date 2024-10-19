@@ -1,18 +1,18 @@
 import  { useEffect, useState } from 'react';
-import './Alert.css'; // Archivo CSS para los estilos
+import './Alert.css'; 
 
 // eslint-disable-next-line react/prop-types
 export const Alert = ({ message, onClose, duration = 3000 }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    // Ocultar la alerta después de `duration` milisegundos
+    
     const timer = setTimeout(() => {
       setVisible(false);
-      onClose(); // Llamar a la función para cerrar la alerta
+      onClose(); 
     }, duration);
 
-    return () => clearTimeout(timer); // Limpiar el temporizador si se desmonta el componente
+    return () => clearTimeout(timer); 
   }, [onClose, duration]);
 
   if (!visible) {

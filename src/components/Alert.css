@@ -1,9 +1,9 @@
-/* Estilos para la alerta */
+
 .alert {
     position: fixed;
 
     right: 20px;
-    background-color: #306495; /* Color verde de éxito */
+    background-color: #306495; 
     color: white;
     padding: 16px;
     border-radius: 4px;
