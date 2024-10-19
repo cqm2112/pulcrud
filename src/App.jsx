@@ -5,7 +5,7 @@ import img1 from "./assets/emptyIcon.png";
 import img2 from "./assets/penIcon.png";
 import { listProcedimientos, deleteProcedimiento, createProcedimiento } from "../server/src/graphql/queries.js";
 import config from "../server/src/amplifyconfiguration.json";
-import Modal from "./components/modal.jsx";
+import Modal from "./components/Modal.jsx";
 import trash from "./assets/trash.png";
 import { LoadingScreen } from "./components/Loading.jsx";
 import { Alert } from "./components/Alert.jsx";
