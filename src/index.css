@@ -34,6 +34,7 @@ height: 87vh;
   display: flex;
   flex-direction: row;
   margin-left: 34px;
+  margin-top: 16px;
   width: 85%;
 
 }
