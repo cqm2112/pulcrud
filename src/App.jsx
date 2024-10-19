@@ -198,7 +198,7 @@ export default function App() {
                           {procedure.reclamadoRDS}
                         </span>
                       </div>
-                      <div className="infodiv">
+                      <div className="infoSection">
                         <span className="infoTitle">{"Diferencia RD$"}</span>
                         <span className="infoSection">
                           {procedure.diferenciaRDS}
