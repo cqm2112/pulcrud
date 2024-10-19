@@ -42,6 +42,13 @@ export default function App() {
     }
   };
 
+  const validateProcedures = () => {
+    return editingProcedure.every(procedure => {
+      return Object.values(procedure).every(value => value !== '' && value !== null && value !== undefined);
+    });
+  };
+  
+
   const handleDeleteProcedure = async (id) => {
     try {
       const proceduresUpdated = editingProcedure.filter((p) => p.id !== id);
@@ -53,10 +60,15 @@ export default function App() {
 
   const handleConfirm = async () => {
     try {
+      const isValid = validateProcedures();
+      console.log(isValid)
+      if(isValid){
       closeModal();
       setLoading(true)
       await UpdateProcedures();
-   
+    }else{
+      alert("Todos los campos son requeridos")
+    }
       console.log("Confirmado");
     } catch (error) {
       console.error('Error durante la confirmación:', error);
@@ -76,12 +88,20 @@ export default function App() {
       {
         id
         : 
-        generateGUID()} 
+        generateGUID(),
+      nombre: '',
+      codigo:'',
+      reclamadoRDS: null,
+      diferenciaRDS: null,
+      autorizadoRDS: null
+      } 
     ])
   }
 
   const UpdateProcedures = async () => {
+  
     try {
+      
      console.log(editingProcedure)
       const client = generateClient();
       for (let proc of procedures) {
@@ -119,6 +139,7 @@ export default function App() {
     } catch (error) {
       console.error('Error al crear procedimientos:', error);
     }
+ 
   };
 
   const handleInputChange = (e, index, field) => {
