@@ -120,6 +120,7 @@ button {
   font-size: 15px;
   font-weight: 500;
   font-family: inherit;
+  color: white;
   background-color: #3F48AD;
   cursor: pointer;
   transition: border-color 0.25s;
