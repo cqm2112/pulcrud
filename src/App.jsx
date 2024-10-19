@@ -132,7 +132,7 @@ export default function App() {
           }
         });
       }
-      setProcedures(editingProcedure);
+    await fetchProcedures();
       setLoading(false)
       setShowAlert(true);
       console.log('Nuevos procedimientos creados');
