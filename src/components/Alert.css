@@ -1,0 +1,22 @@
+/* Estilos para la alerta */
+.alert {
+    position: fixed;
+
+    right: 20px;
+    background-color: #306495; /* Color verde de éxito */
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    bottom: 30px;
+    height: 4%;
+  }
+  
+  .alert p {
+    margin: 0;
+    font-size: 1em;
+  }
+  

@@ -25,7 +25,7 @@ height: 87vh;
 .procedureContainer{
   background: #ffff;
   height: 78px;
-  width: 941px;
+  max-width: 75%;
   border-radius: 10px;
   margin-bottom: 12px;
   display: flex;
@@ -57,6 +57,9 @@ height: 87vh;
 }
 .infoTitle{
   color: #949494;
+
+}
+.infoEditTitle, .infoTitle{
   font-weight: 400;
   font-size: 16px;
   line-height: 18.78px;
@@ -107,16 +110,16 @@ h1 {
 }
 
 button {
+  padding: 0px;
   border-radius: 5px;
   border: 1px solid transparent;
   height: 32px;
-  min-width: 202px;
+  max-width: 208px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 20%;
-
-  font-size: 14px;
+  width: 100%;
+  font-size: 15px;
   font-weight: 500;
   font-family: inherit;
   background-color: #3F48AD;
@@ -126,6 +129,7 @@ button {
 .editForm{
   display: flex;
   gap: 48px;
+  margin-right: 40px;
 }
 input{
   width: 100%;
