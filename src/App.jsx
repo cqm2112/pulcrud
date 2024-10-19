@@ -242,6 +242,7 @@ export default function App() {
                     onChange={(e) => handleInputChange(e, idx, 'nombre')}
                     value={procedure.nombre}
                     placeholder="Nombre"
+                 
                   />
                 </div>
                 <div className="editSection">
@@ -251,6 +252,7 @@ export default function App() {
                     onChange={(e) => handleInputChange(e, idx, 'codigo')}
                     value={procedure.codigo}
                     placeholder="Código"
+                      type="number"
                   />
                 </div>
                 <div className="editSection">
@@ -260,15 +262,17 @@ export default function App() {
                     onChange={(e) => handleInputChange(e, idx, 'reclamadoRDS')}
                     value={procedure.reclamadoRDS}
                     placeholder="Reclamado RD$"
+                      type="number"
                   />
                 </div>
                 <div className="editSection">
-                  <span className="infoEditTitle">{"Diferencia RD$"}</span>
+                  <span className="infoEditTitle" >{"Diferencia RD$"}</span>
                   <input
                     name="diferenciaRDS"
                     onChange={(e) => handleInputChange(e, idx, 'diferenciaRDS')}
                     value={procedure.diferenciaRDS}
                     placeholder="Diferencia RD$"
+                      type="number"
                   />
                 </div>
                 <div className="editSection">
@@ -278,6 +282,7 @@ export default function App() {
                     onChange={(e) => handleInputChange(e, idx, 'autorizadoRDS')}
                     value={procedure.autorizadoRDS}
                     placeholder="Autorizado RD$"
+                    type="number"
                   />
                 </div>
               </div>
