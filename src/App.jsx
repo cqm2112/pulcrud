@@ -168,7 +168,7 @@ export default function App() {
       }
           {showAlert && (
         <Alert
-          message="Prcedamientos Actualizados" 
+          message="Procedimientos Actualizados" 
           onClose={() =>console.log("test")} 
           duration={3000} 
         />
