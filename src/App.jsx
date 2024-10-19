@@ -194,13 +194,13 @@ export default function App() {
                       </div>
                       <div className="infoSection">
                         <span className="infoTitle">{"Reclamado"}</span>
-                        <span className="infoSection">
+                        <span className="infoBody">
                           {procedure.reclamadoRDS}
                         </span>
                       </div>
                       <div className="infoSection">
                         <span className="infoTitle">{"Diferencia RD$"}</span>
-                        <span className="infoSection">
+                        <span className="infoBody">
                           {procedure.diferenciaRDS}
                         </span>
                       </div>
